@@ -7,7 +7,7 @@ License:	LGPL
 Vendor:		DotGNU
 Group:		Libraries
 Source0:	http://www.southern-storm.com.au/download/%{name}-%{version}.tar.gz
-# Source0-md5:	43cf78de2bc86ec6c2653ad5a6d196cc
+# Source0-md5:	03a6db862c0fcec60ad89b8471eb8da3
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	pnet-compiler-csharp = %{version}
