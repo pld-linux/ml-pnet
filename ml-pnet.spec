@@ -3,7 +3,7 @@ Summary:	Extra C# libraries for pnet
 Summary(pl):	Dodatkowe biblioteki C# dla pnet
 Name:		ml-pnet
 Version:	0.6.6
-Release:	0.1
+Release:	2
 License:	LGPL
 Vendor:		DotGNU
 Group:		Libraries
