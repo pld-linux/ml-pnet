@@ -1,14 +1,14 @@
-%define		pnetlib_version 0.6.2
+%define		pnetlib_version 0.6.4
 Summary:	Extra C# libraries for pnet
 Summary(pl):	Dodatkowe biblioteki C# dla pnet
 Name:		ml-pnet
-Version:	0.6.2
+Version:	0.6.4
 Release:	1
 License:	LGPL
 Vendor:		DotGNU
 Group:		Libraries
 Source0:	http://www.southern-storm.com.au/download/%{name}-%{version}.tar.gz
-# Source0-md5:	99ae7e0656f8169aa199433e5eea4afc
+# Source0-md5:	45151ac94ce2944f3348f42222b12f17
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	pnet-compiler-csharp = %{version}
