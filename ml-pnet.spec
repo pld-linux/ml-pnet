@@ -1,6 +1,6 @@
 %define		pnetlib_version 0.7.4
 Summary:	Extra C# libraries for pnet
-Summary(pl):	Dodatkowe biblioteki C# dla pnet
+Summary(pl.UTF-8):   Dodatkowe biblioteki C# dla pnet
 Name:		ml-pnet
 Version:	0.7.4
 Release:	1
@@ -23,10 +23,10 @@ of the Mono class libraries and utility programs with Portable.NET's
 C# compiler, so that they can be installed and used with
 Portable.NET's runtime engine.
 
-%description -l pl
-Ten pakiet zawiera kilka skryptów buduj±cych u¿ywanych do budowania
-klas bibliotek MONO i narzêdzia u¿ywane z kompilatorem Portable.NET,
-co pozwala u¿yæ te biblioteki z ¶rodowiskiem Portable.NET.
+%description -l pl.UTF-8
+Ten pakiet zawiera kilka skryptÃ³w budujÄ…cych uÅ¼ywanych do budowania
+klas bibliotek MONO i narzÄ™dzia uÅ¼ywane z kompilatorem Portable.NET,
+co pozwala uÅ¼yÄ‡ te biblioteki z Å›rodowiskiem Portable.NET.
 
 %prep
 %setup -q
