@@ -1,6 +1,6 @@
 %define		pnetlib_version 0.7.4
 Summary:	Extra C# libraries for pnet
-Summary(pl.UTF-8):   Dodatkowe biblioteki C# dla pnet
+Summary(pl.UTF-8):	Dodatkowe biblioteki C# dla pnet
 Name:		ml-pnet
 Version:	0.7.4
 Release:	1
