@@ -1,14 +1,15 @@
-%define		pnetlib_version 0.7.4
+%define		pnetlib_version 0.8.0
 Summary:	Extra C# libraries for pnet
 Summary(pl.UTF-8):	Dodatkowe biblioteki C# dla pnet
 Name:		ml-pnet
-Version:	0.7.4
+Version:	0.8.0
 Release:	1
 License:	LGPL
 Vendor:		DotGNU
 Group:		Libraries
-Source0:	http://www.southern-storm.com.au/download/%{name}-%{version}.tar.gz
-# Source0-md5:	7ea52692236da9d3d48bafa6e7819b53
+Source0:	http://download.savannah.gnu.org/releases/dotgnu-pnet/%{name}-%{version}.tar.gz
+# Source0-md5:	b1c67faece957c23e6378cee50c0fdcb
+URL:		http://www.gnu.org/software/dotgnu/pnet.html
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	pnet-compiler-csharp = %{version}
