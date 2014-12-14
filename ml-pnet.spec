@@ -6,12 +6,12 @@
 Summary:	Mono Libraries for Portable.NET
 Summary(pl.UTF-8):	Biblioteki Mono dla środowiska Portable.NET
 Name:		ml-pnet
-Version:	0.8.0
+Version:	0.8.1
 Release:	1
 License:	GPL v2+ (pnet scripts), MIT/GPL v2 (Mono libraries/tools)
 Group:		Libraries
 Source0:	http://download.savannah.gnu.org/releases/dotgnu-pnet/%{name}-%{version}.tar.gz
-# Source0-md5:	b1c67faece957c23e6378cee50c0fdcb
+# Source0-md5:	0801c188d5a4ed8adea2c1479abe66ea
 URL:		http://www.gnu.org/software/dotgnu/pnet.html
 BuildRequires:	autoconf
 BuildRequires:	automake
