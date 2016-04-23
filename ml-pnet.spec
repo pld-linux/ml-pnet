@@ -7,11 +7,12 @@ Summary:	Mono Libraries for Portable.NET
 Summary(pl.UTF-8):	Biblioteki Mono dla środowiska Portable.NET
 Name:		ml-pnet
 Version:	0.8.1
-Release:	1
+Release:	2
 License:	GPL v2+ (pnet scripts), MIT/GPL v2 (Mono libraries/tools)
 Group:		Libraries
 Source0:	http://download.savannah.gnu.org/releases/dotgnu-pnet/%{name}-%{version}.tar.gz
 # Source0-md5:	0801c188d5a4ed8adea2c1479abe66ea
+Patch0:		ac-libdir.patch
 URL:		http://www.gnu.org/software/dotgnu/pnet.html
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -19,6 +20,7 @@ BuildRequires:	automake
 # required libraries: mscorlib Microsoft.VisualC
 BuildRequires:	pnet-compiler-csharp = %{pnetlib_version}
 BuildRequires:	pnet-ilinstall = %{pnetlib_version}
+BuildRequires:	pnet-tools = %{pnetlib_version}
 BuildRequires:	pnetlib-base = %{pnetlib_version}
 BuildRequires:	pnetlib-winforms = %{pnetlib_version}
 BuildRequires:	treecc
@@ -39,6 +41,7 @@ C# Portable.NET. W ten sposób te komponenty Mono mogą być używane ze
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %{__aclocal}

@@ -1,0 +1,45 @@
+--- ml-pnet-0.8.1/configure.in~	2007-04-17 20:02:22.000000000 +0200
++++ ml-pnet-0.8.1/configure.in	2016-04-23 09:46:14.527893286 +0200
+@@ -219,8 +219,8 @@
+ if test -f "$PNETLIB_PATH/runtime/mscorlib.dll" ; then
+ 	ASSEMBLY="$PNETLIB_PATH/runtime/mscorlib.dll"
+ else
+-	if test -f "${prefix}/lib/cscc/lib/mscorlib.dll" ; then
+-		ASSEMBLY="${prefix}/lib/cscc/lib/mscorlib.dll"
++	if test -f "${libdir}/cscc/lib/mscorlib.dll" ; then
++		ASSEMBLY="${libdir}/cscc/lib/mscorlib.dll"
+ 	fi
+ fi
+ if test "xASSEMBLY" = "x" ; then
+@@ -240,8 +240,8 @@
+ if test -f "$PNETLIB_PATH/compat/Microsoft.VisualC.dll" ; then
+ 	ASSEMBLY="$PNETLIB_PATH/compat/Microsoft.VisualC.dll"
+ else
+-	if test -f "${prefix}/lib/cscc/lib/Microsoft.VisualC.dll" ; then
+-		ASSEMBLY="${prefix}/lib/cscc/lib/Microsoft.VisualC.dll"
++	if test -f "${libdir}/cscc/lib/Microsoft.VisualC.dll" ; then
++		ASSEMBLY="${libdir}/cscc/lib/Microsoft.VisualC.dll"
+ 	fi
+ fi
+ if test "xASSEMBLY" = "x" ; then
+@@ -269,7 +269,7 @@
+ 	echo '**************************************************'
+ 	exit 1
+ else
+-	AC_PATH_PROG(CSHARP_PLUGIN, cscc-cs,, $PNET_PATH/cscc:${prefix}/lib/cscc/plugins:${prefix}/bin:$PATH)
++	AC_PATH_PROG(CSHARP_PLUGIN, cscc-cs,, $PNET_PATH/cscc:${libdir}/cscc/plugins:${prefix}/bin:$PATH)
+ 	if test "x$CYGPATH" = "x" ; then
+ 		CSHARP_COMPILER_CYGWIN="$CSHARP_COMPILER"
+ 		CYG_ILGAC="$ILGAC"
+@@ -282,9 +282,9 @@
+ 		CSHARP_PLUGIN=`"$CYGPATH" -w "$CSHARP_PLUGIN"`
+ 		CYG_ILGAC=`"$CYGPATH" -w "$ILGAC"`
+ 		if test "x$prefix" = "xNONE" ; then
+-			CYG_CACHE=`"$CYGPATH" -w "${ac_default_prefix}/lib/cscc/lib"`
++			CYG_CACHE=`"$CYGPATH" -w "${libdir}/cscc/lib"`
+ 		else
+-			CYG_CACHE=`"$CYGPATH" -w "${prefix}/lib/cscc/lib"`
++			CYG_CACHE=`"$CYGPATH" -w "${libdir}/cscc/lib"`
+ 		fi
+ 	fi
+ 	CSANT_FLAGS='--compiler cscc -Dcscc="$(CSHARP_COMPILER)" -Dcscc.plugins.cs="$(CSHARP_PLUGIN)" --profile "$(top_srcdir)/profiles/$(PROFILE_NAME)" -Ddebug.flag="$(DEBUG_FLAG)" -Dilgac="$(CYG_ILGAC)" --assembly-cache "$(DESTDIR)$(CYG_CACHE)" -DFRAMEWORK_VERSION="$(FRAMEWORK_VERSION)" -DSECONDARY_VERSION="$(SECONDARY_VERSION)"'
