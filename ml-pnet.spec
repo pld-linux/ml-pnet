@@ -41,7 +41,7 @@ C# Portable.NET. W ten sposób te komponenty Mono mogą być używane ze
 
 %prep
 %setup -q
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 %{__aclocal}
